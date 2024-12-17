@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes - Digestão de Carboidratos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Questionário 2 - Digestão de Carboidratos</h1>
+
+    <div id="quizContainer">
+        <form id="quizForm">
+            <!-- Pergunta 1 -->
+            <div id="page1" style="display: none;">
+                <fieldset>
+                    <legend>1) Está incorreto o que se afirma em:</legend>
+                    <label><input type="radio" name="q1" data-correct="false"> Hipoglicemia é a baixa concentração de glicose no sangue.</label><br>
+                    <label><input type="radio" name="q1" data-correct="false"> Principal substrato oxidável da maioria dos organismos.</label><br>
+                    <label><input type="radio" name="q1" data-correct="true"> Hiperglicemia é a baixa concentração de glicose no sangue.</label><br>
+                    <label><input type="radio" name="q1" data-correct="false"> Quase todas as células são capazes de atender às suas demandas energéticas a partir da glicose.</label>
+                </fieldset>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div id="page2" style="display: none;">
+                <fieldset>
+                    <legend>2) Sobre os monossacarídeos está correto:</legend>
+                    <label><input type="radio" name="q2" data-correct="false"> Galactose pode ser encontrada no leite, pouco encontrada sozinha mas combinada com glicose formando maltose.</label><br>
+                    <label><input type="radio" name="q2" data-correct="true"> Monossacarídeos são açúcares simples que não são quebrados em unidades menores.</label><br>
+                    <label><input type="radio" name="q2" data-correct="false"> Exemplos de monossacarídeos são: frutose, glicose e maltose.</label><br>
+                    <label><input type="radio" name="q2" data-correct="false"> Sacarose é um oligossacarídeo formado pela junção de glicose + frutose.</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div id="page3" style="display: none;">
+                <fieldset>
+                    <legend>3) Sobre a classificação dos carboidratos está incorreto dizer que:</legend>
+                    <label><input type="radio" name="q3" data-correct="false"> São exemplos de dissacarídeos: lactose, maltose, sacarose.</label><br>
+                    <label><input type="radio" name="q3" data-correct="false"> Um exemplo de homopolissacarídeo é o amido.</label><br>
+                    <label><input type="radio" name="q3" data-correct="true"> Os monossacarídeos são a junção de dois dissacarídeos.</label><br>
+                    <label><input type="radio" name="q3" data-correct="false"> Oligossacarídeos são açúcares que por hidrólise produzem de 3 a 10 monossacarídeos.</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div id="page4"style="display: none;">
+                <fieldset>
+                    <legend>4) Está incorreto o que se afirma em:</legend>
+                    <label><input type="radio" name="q4" data-correct="false"> Ligações beta-1,4 glicosídicas não são digeríveis.</label><br>
+                    <label><input type="radio" name="q4" data-correct="false"> Fibras solúveis formam um gel em contato com a água e criam o bolo fecal.</label><br>
+                    <label><input type="radio" name="q4" data-correct="false"> O que diferencia o amido do glicogênio é que o glicogênio tem mais ramificações.</label><br>
+                    <label><input type="radio" name="q4" data-correct="true"> Alimentos ultraprocessados são mais dificilmente absorvidos do que os orgânicos.</label><br>
+                    <label><input type="radio" name="q4" data-correct="false"> Nosso corpo é incapaz de absorver celulose pois não temos uma enzima que quebra as ligações beta-1,4.</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div id="page5" style="display: none;">
+                <fieldset>
+                    <legend>5) Sobre as dissacaridases, marque a alternativa que está incorreta:</legend>
+                    <label><input type="radio" name="q5" data-correct="false"> Maltase quebra maltose em glicose + glicose.</label><br>
+                    <label><input type="radio" name="q5" data-correct="false"> São enzimas da borda em escova.</label><br>
+                    <label><input type="radio" name="q5" data-correct="true"> Lactase quebra lactose em galactose + frutose.</label><br>
+                    <label><input type="radio" name="q5" data-correct="true"> Invertase quebra sacarose em glicose + glicose.</label><br>
+                    <label><input type="radio" name="q5" data-correct="false"> Quebram moléculas grandes em substâncias menores para ocorrer a absorção pelo nosso corpo.</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 6 -->
+            <div id="page6" style="display: none;">
+                <fieldset>
+                    <legend>6) O que são dextrina-limites?</legend>
+                    <label><input type="radio" name="q6" data-correct="false"> Polissacarídeos resultantes da digestão do amido pelas enzimas amilases, que possuem cadeias completamente ramificadas e sem glicose livre.</label><br>
+                    <label><input type="radio" name="q6" data-correct="false"> O produto final da digestão do amido, formado por cadeias de glicose lineares prontas para absorção no intestino delgado.</label><br>
+                    <label><input type="radio" name="q6" data-correct="true"> Fragmentos de amido parcialmente digeridos pelas amilases, que contêm regiões ramificadas resistentes à ação da enzima.</label><br>
+                    <label><input type="radio" name="q6" data-correct="false"> Cadeias de glicose obtidas exclusivamente pela ação das dissacaridases, sem participação das amilases na digestão.</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 7 -->
+            <div id="page7" style="display: none;">
+                <fieldset>
+                    <legend>7) Está incorreto o que se diz em:</legend>
+                    <label><input type="radio" name="q7" data-correct="false"> As amilases salivar e pancreática agem somente em amido.</label><br>
+                    <label><input type="radio" name="q7" data-correct="true"> O suco gástrico quebra as ligações glicosídicas.</label><br>
+                    <label><input type="radio" name="q7" data-correct="false"> No caso da sacarose sua absorção começa no intestino.</label><br>
+                    <label><input type="radio" name="q7" data-correct="false"> A amilase salivar é secretada na boca.</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 8 -->
+            <div id="page8" style="display: none;">
+                <fieldset>
+                    <legend>8) Sobre glicose, frutose e galactose, está incorreto o que se afirma:</legend>
+                    <label><input type="radio" name="q8" data-correct="false"> Glicose pode ser absorvida diretamente pelo sangue.</label><br>
+                    <label><input type="radio" name="q8" data-correct="false"> Frutose necessita de uma proteína transportadora para ser absorvida.</label><br>
+                    <label><input type="radio" name="q8" data-correct="true"> Galactose é absorvida mais rapidamente do que a glicose.</label><br>
+                    <label><input type="radio" name="q8" data-correct="false"> Glicose passa rapidamente pela membrana celular.</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="submitQuiz()">Concluir</button> 
+                </div>
+        </form>
+        <div id="result" style="display: none;"></div>
+        
+    </div>
+<script src="script2.js"defer></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script1.js"></script>
+</head>
+<body>
+    <div id="quizContainer">
+        <form id="quizForm">
+            <!-- Página 1 -->
+            <div id="page1" class="quiz-page"style="display: none;">
+                <h2>Perguntas - Página 1</h2>
+                <fieldset>
+                    <legend>1. Onde ocorre a glicólise?</legend>
+                    <label><input type="radio" name="question1" value="mitocôndria" data-correct="false"> Mitocôndria</label><br>
+                    <label><input type="radio" name="question1" value="citossol" data-correct="true"> Citossol</label><br>
+                    <label><input type="radio" name="question1" value="membrana plasmática" data-correct="false"> Membrana plasmática</label><br>
+                    <label><input type="radio" name="question1" value="núcleo celular" data-correct="false"> Núcleo celular</label>
+                </fieldset>                
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+                            <!-- Página 2 -->
+            <div id="page2" class="quiz-page" style="display: none;">
+                <h2>Perguntas - Página 2</h2>
+
+                <fieldset>
+                    <legend>2. Está incorreto sobre glicólise:</legend>
+                    <label><input type="radio" name="question2" value="Glicólise é a oxidação de glicose a piruvato" data-correct="false"> Glicólise é a oxidação de glicose a piruvato</label><br>
+                    <label><input type="radio" name="question2" value="É um processo que ocorre em três etapas em condições aeróbicas" data-correct="false"> É um processo que ocorre em três etapas em condições aeróbicas</label><br>
+                    <label><input type="radio" name="question2" value="Tem o rendimento de 2 piruvatos, 1 ATP, 2 NADH + H+" data-correct="true"> Tem o rendimento de 2 piruvatos, 1 ATP, 2 NADH + H+</label><br>
+                    <label><input type="radio" name="question2" value="São consumidos 2 ATPs inicialmente, e são gerados 4 ATPs" data-correct="false"> São consumidos 2 ATPs inicialmente, e são gerados 4 ATPs</label>
+                </fieldset>
+                
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Página 3 -->
+            <div id="page3" class="quiz-page" style="display: none;">
+                <h2>Perguntas - Página 3</h2>
+                <fieldset>
+                    <legend>3. Qual o saldo de ATPs ao final da glicólise?</legend>
+                    <label><input type="radio" name="question3" value="4" data-correct="false"> 4</label><br>
+                    <label><input type="radio" name="question3" value="2" data-correct="true"> 2</label><br>
+                    <label><input type="radio" name="question3" value="6" data-correct="false"> 6</label><br>
+                    <label><input type="radio" name="question3" value="0" data-correct="false"> 0</label>
+
+                </fieldset>                    
+                    <button type="button" onclick="prevPage()">Anterior</button>
+                    <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+            <!-- Página 4 -->
+            <div id="page4" class="quiz-page" style="display: none;">
+                <h2>Perguntas - Página 4</h2>
+
+                <fieldset>
+                    <legend>4. Qual é a enzima responsável pela conversão de glicose em glicose-6-fosfato no início da glicólise?</legend>
+                    <label><input type="radio" name="question4" value="Hexoquinase" data-correct="true"> Hexoquinase</label><br>
+                    <label><input type="radio" name="question4" value="Piruvato quinase" data-correct="false"> Piruvato quinase</label><br>
+                    <label><input type="radio" name="question4" value="Fosfofrutoquinase-1" data-correct="false"> Fosfofrutoquinase-1</label><br>
+                    <label><input type="radio" name="question4" value="Aldolase" data-correct="false"> Aldolase</label>
+                </fieldset>
+                
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Página 5 -->
+            <div id="page5" class="quiz-page" style="display: none;">
+                <h2>Perguntas - Página 5</h2>
+                <fieldset>
+                    <legend>5. Qual dos seguintes não é um produto direto da glicólise?</legend>
+                    <label><input type="radio" name="question5" value="NADH" data-correct="false"> NADH</label><br>
+                    <label><input type="radio" name="question5" value="ATP" data-correct="false"> ATP</label><br>
+                    <label><input type="radio" name="question5" value="CO₂" data-correct="true"> CO₂</label><br>
+                    <label><input type="radio" name="question5" value="Piruvato" data-correct="false"> Piruvato</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Página 6 -->
+            <div id="page6" class="quiz-page" style="display: none;">
+                <h2>Perguntas - Página 7</h2>
+                <fieldset>
+                    <legend>6. Sobre a conversão de piruvato a acetil-CoA marque a alternativa incorreta:</legend>
+                    <label><input type="radio" name="question6" value="ocorre em condições de aerobiose" data-correct="false"> ocorre em condições de aerobiose</label><br>
+                    <label><input type="radio" name="question6" value="é um processo reversível" data-correct="true"> é um processo reversível</label><br>
+                    <label><input type="radio" name="question6" value="O complexo piruvato desidrogenase envolve 3 enzimas" data-correct="false"> O complexo piruvato desidrogenase envolve 3 enzimas</label>
+                </fieldset>
+                
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="submitQuiz()">Submeter</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="result" style="display: none;"></div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário - Fermentação Lática e Alcoólica</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Questionário 3 - Fermentação Lática e Alcoólica</h1>
+
+    <form id="quizForm">
+        <!-- Página 1 -->
+        <div id="page1" class="quiz-page"style="display: none;">
+            <fieldset>
+                <legend>1) Em que momento a fermentação ocorre?</legend>
+                <label><input type="radio" name="q1" value="true" data-correct="true"> Quando estamos sem oxigênio.</label><br>
+                <label><input type="radio" name="q1" value="false" data-correct="false"> Em situação de aerobiose.</label><br>
+                <label><input type="radio" name="q1" value="false" data-correct="false"> Ocorre somente em fungos.</label><br>
+                <label><input type="radio" name="q1" value="false" data-correct="false"> A fermentação alcoólica ocorre nos seres humanos em situação de anaerobiose.</label>
+                <button type="button" onclick="nextPage()">Próximo</button>
+
+            </fieldset>
+        </div>
+
+        <!-- Página 2 -->
+        <div id="page2" style="display: none;">
+            <fieldset>
+                <legend>2) Sobre fermentação, é incorreto:</legend>
+                <label><input type="radio" name="q2" value="false" data-correct="false"> Quando estamos em anaerobiose os dois piruvatos provindos da glicose se convertem em lactato.</label><br>
+                <label><input type="radio" name="q2" value="false" data-correct="false"> O processo de fermentação alcoólica tem rendimento de 2 ATPs por glicose.</label><br>
+                <label><input type="radio" name="q2" value="false" data-correct="false"> O lactato pode entrar no ciclo de Cori no fígado (gliconeogênese).</label><br>
+                <label><input type="radio" name="q2" value="true" data-correct="true"> Os níveis aumentados de ácido lático não podem levar a acidose lática.</label><br>
+                <label><input type="radio" name="q2" value="false" data-correct="false"> Lactato só é substrato para a gliconeogênese após exercício intenso.</label>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próximo</button>
+            </fieldset>
+        </div>
+
+        <!-- Página 3 -->
+        <div id="page3" style="display: none;">
+            <fieldset>
+                <legend>3) Sobre fermentação, marque a incorreta:</legend>
+                <label><input type="radio" name="q3" value="false" data-correct="false"> Durante a redução de piruvato a lactato há o consumo de um NADH + H⁺.</label><br>
+                <label><input type="radio" name="q3" value="false" data-correct="false"> A acidose lática é o aumento da concentração de ácido lático no plasma.</label><br>
+                <label><input type="radio" name="q3" value="false" data-correct="false"> A fermentação alcoólica tem saldo de 2 ATPs e libera 2 moléculas de CO₂ e 2 de etanol.</label><br>
+                <label><input type="radio" name="q3" value="false" data-correct="false"> Fermentação alcoólica pode ser usada para produção de bebidas.</label><br>
+                <label><input type="radio" name="q3" value="true" data-correct="true"> O produto final da fermentação lática é etanol.</label>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próximo</button>
+            </fieldset>
+        </div>
+
+        <!-- Página 4 -->
+        <div id="page4" style="display: none;">
+            <fieldset>
+                <legend>4) Qual é o produto final da glicólise em condições anaeróbicas no músculo humano?</legend>
+                <label><input type="radio" name="q4" value="false" data-correct="false"> Ácido acético.</label><br>
+                <label><input type="radio" name="q4" value="true" data-correct="true"> Ácido lático.</label><br>
+                <label><input type="radio" name="q4" value="false" data-correct="false"> Etanol.</label><br>
+                <label><input type="radio" name="q4" value="false" data-correct="false"> Piruvato.</label>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="submitQuiz()">Concluir</button> 
+            </fieldset>
+        </div>
+    </form>
+        <!-- Resultado -->
+        <div id="result" style="display: none;"></div>
+    </form>
+</body>
+</html>
