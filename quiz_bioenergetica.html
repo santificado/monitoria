@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz - Bioenergética</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script2.js"></script>   <!-- Ajustado o nome do arquivo JavaScript -->
+    <script defer src="script1.js"></script>   <!-- Ajustado o nome do arquivo JavaScript -->
 </head>
 <body>
     <h1>Questionário 1 - Bioenergética</h1>
@@ -16,10 +16,10 @@
             <div id="page1" style="display: none;">
                 <fieldset>
                     <legend>1) Sobre bioenergética é correto apenas:</legend>
-                    <label><input type="radio" name="q1" data-correct="false"> Apenas algumas formas de energia são interconversíveis.</label><br>
-                    <label><input type="radio" name="q1" data-correct="true"> Bioenergética descreve como os organismos vivos capturam, transformam e usam energia.</label><br>
-                    <label><input type="radio" name="q1" data-correct="false"> Uma reação espontânea sempre é imediata.</label><br>
-                    <label><input type="radio" name="q1" data-correct="false"> Uma reação não espontânea tem ΔG negativo.</label>
+                    <label><input type="radio" name="q1" value="a" > Apenas algumas formas de energia são interconversíveis.</label><br>
+                    <label><input type="radio" name="q1" data-correct="true" value="b"> Bioenergética descreve como os organismos vivos capturam, transformam e usam energia.</label><br>
+                    <label><input type="radio" name="q1" value="c"> Uma reação espontânea sempre é imediata.</label><br>
+                    <label><input type="radio" name="q1" value="d"> Uma reação não espontânea tem ΔG negativo.</label>
                     <button type="button" onclick="nextPage()">Próxima</button>
                 </fieldset>
             </div>
@@ -28,11 +28,11 @@
             <div id="page2" style="display: none;">
                 <fieldset>
                     <legend>2) Sobre taxa metabólica basal está correta:</legend>
-                    <label><input type="radio" name="q2" data-correct="true"> Varia de acordo com idade, sexo, constituição física.</label><br>
-                    <label><input type="radio" name="q2" data-correct="false"> Corresponde à energia necessária para a manutenção do batimento cardíaco, apenas.</label><br>
-                    <label><input type="radio" name="q2" data-correct="false"> A taxa metabólica basal se mantém constante em todos os indivíduos de 70 Kg.</label><br>
-                    <label><input type="radio" name="q2" data-correct="false"> A taxa metabólica basal varia de acordo com capacidade cognitiva.</label><br>
-                    <label><input type="radio" name="q2" data-correct="false"> Aumenta em indivíduos sedentários.</label>
+                    <label><input type="radio" name="q2" data-correct="true" value="a"> Varia de acordo com idade, sexo, constituição física.</label><br>
+                    <label><input type="radio" name="q2" value="b"> Corresponde à energia necessária para a manutenção do batimento cardíaco, apenas.</label><br>
+                    <label><input type="radio" name="q2" value="c"> A taxa metabólica basal se mantém constante em todos os indivíduos de 70 Kg.</label><br>
+                    <label><input type="radio" name="q2" value="d"> A taxa metabólica basal varia de acordo com capacidade cognitiva.</label><br>
+                    <label><input type="radio" name="q2"    value="e"> Aumenta em indivíduos sedentários.</label>
                     <button type="button" onclick="prevPage()">Anterior</button>
                     <button type="button" onclick="nextPage()">Próxima</button>
                 </fieldset>
@@ -42,11 +42,11 @@
             <div id="page3" style="display: none;">
                 <fieldset>
                     <legend>3) Sobre reações espontâneas, está incorreto:</legend>
-                    <label><input type="radio" name="q3" data-correct="false"> Ocorre liberação de energia.</label><br>
-                    <label><input type="radio" name="q3" data-correct="false"> Está desvinculada com parâmetros cinéticos, como velocidade.</label><br>
-                    <label><input type="radio" name="q3" data-correct="false"> O ΔG deve ser negativo.</label><br>
-                    <label><input type="radio" name="q3" data-correct="true"> Se trata de uma reação endergônica.</label><br>
-                    <label><input type="radio" name="q3" data-correct="false"> Se trata de uma reação exergônica.</label>
+                    <label><input type="radio" name="q3" value="a" > Ocorre liberação de energia.</label><br>
+                    <label><input type="radio" name="q3" value="b"> Está desvinculada com parâmetros cinéticos, como velocidade.</label><br>
+                    <label><input type="radio" name="q3" value="c"> O ΔG deve ser negativo.</label><br>
+                    <label><input type="radio" name="q3" data-correct="true" value="d"> Se trata de uma reação endergônica.</label><br>
+                    <label><input type="radio" name="q3" value="e"> Se trata de uma reação exergônica.</label>
                     <button type="button" onclick="prevPage()">Anterior</button>
                     <button type="button" onclick="nextPage()">Próxima</button>
                 </fieldset>
@@ -56,10 +56,10 @@
             <div id="page4" style="display: none;">
                 <fieldset>
                     <legend>4) Sobre bioenergética é correto o que se diz em:</legend>
-                    <label><input type="radio" name="q4" data-correct="false"> Reações catabólicas são endergônicas.</label><br>
-                    <label><input type="radio" name="q4" data-correct="false"> Reações anabólicas são exergônicas.</label><br>
-                    <label><input type="radio" name="q4" data-correct="false"> Reações anabólicas têm ΔG negativo.</label><br>
-                    <label><input type="radio" name="q4" data-correct="true"> Reações catabólicas liberam energia, ou seja, são exergônicas.</label>
+                    <label><input type="radio" name="q4" value="a"> Reações catabólicas são endergônicas.</label><br>
+                    <label><input type="radio" name="q4" value="b"> Reações anabólicas são exergônicas.</label><br>
+                    <label><input type="radio" name="q4" value="c"> Reações anabólicas têm ΔG negativo.</label><br>
+                    <label><input type="radio" name="q4" data-correct="true" value="d"> Reações catabólicas liberam energia, ou seja, são exergônicas.</label>
                     <button type="button" onclick="prevPage()">Anterior</button>
                     <button type="button" onclick="nextPage()">Próxima</button>
                 </fieldset>
@@ -69,10 +69,10 @@
             <div id="page5" style="display: none;">
                 <fieldset>
                     <legend>5) Sobre ATP, está correto:</legend>
-                    <label><input type="radio" name="q5" data-correct="false"> Se trata da molécula adenosina monofosfato.</label><br>
-                    <label><input type="radio" name="q5" data-correct="false"> Não tem função no nosso corpo, apenas em seres vegetais.</label><br>
-                    <label><input type="radio" name="q5" data-correct="false"> Reações catabólicas requerem ATP para ocorrer.</label><br>
-                    <label><input type="radio" name="q5" data-correct="true"> É a principal molécula carreadora da energia química utilizada nas mais diversas reações que ocorrem nas células.</label>
+                    <label><input type="radio" name="q5" value="a"> Se trata da molécula adenosina monofosfato.</label><br>
+                    <label><input type="radio" name="q5" value="b"> Não tem função no nosso corpo, apenas em seres vegetais.</label><br>
+                    <label><input type="radio" name="q5" value="c"> Reações catabólicas requerem ATP para ocorrer.</label><br>
+                    <label><input type="radio" name="q5" data-correct="true" value="d"> É a principal molécula carreadora da energia química utilizada nas mais diversas reações que ocorrem nas células.</label>
                     <button type="button" onclick="prevPage()">Anterior</button>
                     <button type="button" onclick="nextPage()">Próxima</button>
                 </fieldset>
@@ -82,10 +82,10 @@
             <div id="page6" style="display: none;">
                 <fieldset>
                     <legend>6) Sobre as coenzimas NAD+ e FAD, é incorreto:</legend>
-                    <label><input type="radio" name="q6" data-correct="false"> FAD recebe dois elétrons e um próton.</label><br>
-                    <label><input type="radio" name="q6" data-correct="false"> FAD reduz-se a FADH2 e NAD+ reduz em NADH + H+.</label><br>
-                    <label><input type="radio" name="q6" data-correct="false"> NAD+ faz a transferência de 2 elétrons e um próton.</label><br>
-                    <label><input type="radio" name="q6" data-correct="true"> São coenzimas que recebem H+ e elétrons na oxidação da glicose.</label>
+                    <label><input type="radio" name="q6"   value="a"> FAD recebe dois elétrons e um próton.</label><br>
+                    <label><input type="radio" name="q6"   value="b"> FAD reduz-se a FADH2 e NAD+ reduz em NADH + H+.</label><br>
+                    <label><input type="radio" name="q6" value="c"> NAD+ faz a transferência de 2 elétrons e um próton.</label><br>
+                    <label><input type="radio" name="q6" data-correct="true" value="d"> São coenzimas que recebem H+ e elétrons na oxidação da glicose.</label>
                     <button type="button" onclick="prevPage()">Anterior</button>
                     <button type="button" onclick="submitQuiz()">Concluir</button> 
                 </fieldset>

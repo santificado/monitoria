@@ -8,7 +8,7 @@
 body {
     font-family: 'Inter', sans-serif;
     background: #f8f9fa;
-    color: #3498db;
+    color: #ba34db;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -60,7 +60,7 @@ header p {
     font-size: 1.2rem;
     font-weight: 600;
     color: #ffffff;
-    background: linear-gradient(135deg, #3498db, #275e8d);
+    background: linear-gradient(135deg, #db34d3, #81278d);
     padding: 15px 20px;
     border-radius: 8px;
     text-align: center;
@@ -69,13 +69,31 @@ header p {
 }
 
 .quiz-link:hover {
-    background: linear-gradient(135deg, #3498db, #02162b);
+    background: linear-gradient(135deg, #db34d3, #eb89ff);
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .quiz-link:active {
     transform: translateY(2px);
+}
+
+/* Campo de texto */
+textarea {
+	width: 100%;
+	padding: 14px;
+	border: 2px solid #e1e1e1;
+	border-radius: 8px;
+	margin-top: 10px;
+	resize: vertical;
+	transition: border-color 0.3s, box-shadow 0.3s;
+}
+textarea:focus {
+	border-color: #e76f51;
+	/* Laranja */
+	outline: none;
+	box-shadow: 0 0 6px rgba(231, 111, 81, 0.6);
+	/* Laranja suave */
 }
 
 /* Responsividade */

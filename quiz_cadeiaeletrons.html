@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes - Digestão de Carboidratos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Questionário 6 - Cadeia de transporte de eletróns</h1>
+
+    <div id="quizContainer">
+        <form id="quizForm">
+            <!-- Pergunta 1 -->
+            <div id="page1" style="display: none;">
+                <fieldset>
+                    <legend>1) Onde se localiza a cadeia de transporte de elétrons?</legend>
+                    <label><input type="radio" name="q1" value="a"data-correct="true"> Membrana interna das mitocôndrias</label><br>
+                    <label><input type="radio" name="q1" value="b"> Citoplasma</label><br>
+                    <label><input type="radio" name="q1" value="c" > Núcleo celular</label><br>
+                    <label><input type="radio" name="q1" value="d"> Membrana plasmática</label>
+                </fieldset>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div id="page2" style="display: none;">
+                <fieldset>
+                    <legend>2) Quais componentes móveis conectam os complexos da cadeia respiratória?</legend>
+                    <label><input type="radio" name="q2" value="a"> NADH e FADH2</label><br>
+                    <label><input type="radio" name="q2" value="b" data-correct="true">  Coenzima Q (ubiquinona) e citocromo c.</label><br>
+                    <label><input type="radio" name="q2" value="c"> Glicerol fosfato e malato-aspartato</label><br>
+                    <label><input type="radio" name="q2" value="d"> Oxigênio e dióxido de carbono.</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div id="page3" style="display: none;">
+                <fieldset>
+                    <legend>3) Qual é o destino final dos elétrons na cadeia de transporte de elétrons?</legend>
+                    <label><input type="radio" name="q3" value="a"> ATP sintase.</label><br>
+                    <label><input type="radio" name="q3" value="b"> Coenzima Q.</label><br>
+                    <label><input type="radio" name="q3" value="c" data-correct="true"> Água, após serem transferidos para o oxigênio.</label><br>
+                    <label><input type="radio" name="q3" value="d"> Complexo II.</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div id="page4"style="display: none;">
+                <fieldset>
+                    <legend>4)  Qual é a principal função das proteínas desacopladoras como a UCP1 no tecido adiposo marrom?</legend>
+                    <label><input type="radio" name="q4" value="a"> Estabilizar a cadeia de transporte de elétrons.</label><br>
+                    <label><input type="radio" name="q4" value="b"data-correct="true"> Dissipar a energia como calor em vez de produzir ATP.</label><br>
+                    <label><input type="radio" name="q4" value="c"> Inibir a oxidação do NADH e FADH2.</label><br>
+                    <label><input type="radio" name="q4" value="d" > Aumentar a eficiência da fosforilação oxidativa</label><br>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div id="page5" style="display: none;">
+                <fieldset>
+                    <legend>5) Qual complexo é responsável por oxidar o NADH na cadeia de transporte de elétrons?</legend>
+                    <label><input type="radio" name="q5" value="a"> Complexo II</label><br>
+                    <label><input type="radio" name="q5" value="b"> Complexo IV</label><br>
+                    <label><input type="radio" name="q5" value="c" data-correct="true"> ATP sintase</label><br>
+                    <label><input type="radio" name="q5" value="d" data-correct="true"> Complexo I</label><br>
+                    <label><input type="radio" name="q5" value="e"> Citocromo c</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 6 -->
+            <div id="page6" style="display: none;">
+                <fieldset>
+                    <legend>6) Quantos ATPs NADH + H+ e FADH2 produzem?                    </legend>
+                    <label><input type="radio" name="q6" value="a" data-correct="true"> NADH + H+ = 3 ATPs FADH2 = 2 ATPs</label><br>
+                    <label><input type="radio" name="q6" value="b"> NADH + H+ = 2 ATPs FADH2 = 3 ATPs</label><br>
+                    <label><input type="radio" name="q6" value="c" > NADH + H+ = 4 ATPs FADH2 = 2 ATPs</label><br>
+                    <label><input type="radio" name="q6" value="d"> NADH + H+ = 3 ATPs FADH2 = 1 ATP</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 7 -->
+            <div id="page7" style="display: none;">
+                <fieldset>
+                    <legend>7) Qual das afirmativas a seguir sobre desacopladores está incorreta?</legend>
+                    <label><input type="radio" name="q7" value="a"> O transporte de elétrons pode ocorrer sem a síntese de ATP- desacoplador</label><br>
+                    <label><input type="radio" name="q7" value="b" > Um sintoma dos desacopladores é a hipertermia</label><br>
+                    <label><input type="radio" name="q7" value="c" data-correct="true"> Tem como consequência a diminuição da temperatura corpórea</label><br>
+                    <label><input type="radio" name="q7" value="d"> Permitem que os elétrons continuem sendo transportados na cadeia respiratória, mas dissipam o gradiente de prótons como calor em vez de utilizá-lo para a produção de ATP.</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="submitQuiz()">Concluir</button> 
+            </div>
+
+        </form>
+        <div id="result" style="display: none;"></div>
+        
+    </div>
+<script src="script4.js"defer></script>
+</body>
+</html>

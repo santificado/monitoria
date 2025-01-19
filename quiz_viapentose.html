@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes - Digestão de Carboidratos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Questionário 8 - Via das Pentoses</h1>
+
+    <div id="quizContainer">
+        <form id="quizForm">
+            <!-- Pergunta 1 -->
+            <div id="page1" style="display: none;">
+                <fieldset>
+                    <legend>1) O que é a via das pentoses?</legend>
+                <textarea name="q1" rows="4" cols="50" data-correct="Via alternativa de oxidação da Glicose, que leva a produção de dois compostos importantes:  Ribose 5- fosfato e a forma reduzida da nicotinasmida adenina dinucleotídeo (NADPH)."></textarea>
+                </fieldset>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div id="page2" style="display: none;">
+                <fieldset>
+                    <legend>2)  Quais são os substratos iniciais dessa via?</legend>
+                    <label><input type="radio" name="q2" value="a"data-correct="true"> Glicose 6-P + NADP+</label><br>
+                    <label><input type="radio" name="q2" value="b" >Piruvato</label><br>
+                    <label><input type="radio" name="q2" value="c"> Lactato</label><br>
+                    <label><input type="radio" name="q2" value="d"> NADH + H+.</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div id="page3" style="display: none;">
+                <fieldset>
+                    <legend>3) Quais são os dois produtos principais da via das pentoses fosfato?</legend>
+                    <label><input type="radio" name="q3" value="a"> NADH e piruvato</label><br>
+                    <label><input type="radio" name="q3" value="b"> Ribose 5-fosfato e NADH</label><br>
+                    <label><input type="radio" name="q3" value="c" data-correct="true">  NADPH e ribose 5-fosfato</label><br>
+                    <label><input type="radio" name="q3" value="d"> ATP e NADPH</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div id="page4"style="display: none;">
+                <fieldset>
+                    <legend>4) Qual é a principal função do NADPH gerado na via das pentoses fosfato?</legend>
+                    <label><input type="radio" name="q4" value="a"> Transporte de elétrons na cadeia respiratória</label><br>
+                    <label><input type="radio" name="q4" value="b"> Fornecer energia direta para a glicólise</label><br>
+                    <label><input type="radio" name="q4" value="c" data-correct="true"> Atuar como coenzima em reações biossintéticas redutoras</label><br>
+                    <label><input type="radio" name="q4" value="d" > Produção de ATP no ciclo de Krebs</label><br>
+                    <label><input type="radio" name="q4" value="e"> Catalisar a síntese de ácidos nucleicos</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div id="page5" style="display: none;">
+                <fieldset>
+                    <legend>5) Qual dos seguintes tecidos apresenta alta atividade da via das pentoses fosfato?</legend>
+                    <label><input type="radio" name="q5" value="a"> Músculo esquelético</label><br>
+                    <label><input type="radio" name="q5" value="b"data-correct="true"> Tecido adiposo</label><br>
+                    <label><input type="radio" name="q5" value="c" > Medula óssea</label><br>
+                    <label><input type="radio" name="q5" value="d" > Pele</label><br>
+                    <label><input type="radio" name="q5" value="e"> Sistema nervoso central</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 6 -->
+            <div id="page6" style="display: none;">
+                <fieldset>
+                    <legend>6) A via das pentoses fosfato é regulada principalmente pela demanda celular de qual composto?</legend>
+                    <label><input type="radio" name="q6" value="a">ATP</label><br>
+                    <label><input type="radio" name="q6" value="b"data-correct="true">NADPH</label><br>
+                    <label><input type="radio" name="q6" value="c" > Frutose 1,6-bisfosfato</label><br>
+                    <label><input type="radio" name="q6" value="d"> Glicogênio</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 7 -->
+            <div id="page7" style="display: none;">
+                <fieldset>
+                    <legend>7) Qual etapa da via das pentoses fosfato é irreversível?</legend>
+                    <label><input type="radio" name="q7" value="a"> Reações de interconversão reversíveis de açúcares</label><br>
+                    <label><input type="radio" name="q7" value="b" >  Conversão de glicose 6-fosfato em piruvato</label><br>
+                    <label><input type="radio" name="q7" value="c"> Formação de intermediários glicolíticos</label><br>
+                    <label><input type="radio" name="q7" value="d"data-correct="true"> Produção de NADPH na fase oxidativa</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 8 -->
+            <div id="page8" style="display: none;">
+                <fieldset>
+                    <legend>8)Qual das alternativas abaixo descreve uma função da ribose 5-fosfato gerada na via das pentoses fosfato?                    </legend>
+                    <label><input type="radio" name="q8" value="a"> Síntese de ácidos graxos</label><br>
+                    <label><input type="radio" name="q8" value="b" data-correct="true"> Formação de nucleotídeos para DNA e RNA</label><br>
+                    <label><input type="radio" name="q8" value="c" >  Geração de ATP nas hemácias</label><br>
+                    <label><input type="radio" name="q8" value="d"> Regulação do ciclo de Krebs</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+                </div>
+
+                            <!-- Pergunta 9 -->
+            <div id="page9" style="display: none;">
+                <fieldset>
+                    <legend>9) Sobre via das pentoses é incorreto o que se diz em: </legend>
+                    <label><input type="radio" name="q7" value="a"data-correct="true"> Ocorre fosforilação a nível substrato</label><br>
+                    <label><input type="radio" name="q7" value="b" >  Glutationa é um agente redutor</label><br>
+                    <label><input type="radio" name="q7" value="c"> Hemácias sofrem com o estresse oxidativo pelo transporte de o2</label><br>
+                    <label><input type="radio" name="q7" value="d"> Uma importante enzima para essa via é a glicose-6-fosfato-desidrogenase (G6PD)</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="submitQuiz()">Concluir</button> 
+            </div>
+        </form>
+        <div id="result" style="display: none;"></div>
+        
+    </div>
+<script src="script3.js"defer></script>
+</body>
+</html>

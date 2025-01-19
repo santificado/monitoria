@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Cliclo de Krebs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script3.js"></script>   <!-- Ajustado o nome do arquivo JavaScript -->
+</head>
+<body>
+    <h1>Questionário 1 - Bioenergética</h1>
+
+    <div id="quizContainer">
+        <form id="quizForm">
+            <!-- Pergunta 1 -->
+            <div id="page1" style="display: none;">
+                <fieldset>
+                    <legend>1) É correto afirmar que o ciclo de krebs é um processo:</legend>
+                    <label><input type="radio" name="q1" data-correct="true"> Anfibólico</label><br>
+                    <label><input type="radio" name="q1" data-correct="false"> Catabólico </label><br>
+                    <label><input type="radio" name="q1" data-correct="false"> Anabólico</label><br>
+                    <label><input type="radio" name="q1" data-correct="false"> Nenhuma das alternativas</label>
+                    <button type="button" onclick="nextPage()">Próxima</button>
+                </fieldset>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div id="page2" style="display: none;">
+                <fieldset>
+                    <legend>2)Marque a alternativa incorreta sobre o ciclo de Krebs:                     </legend>
+                    <label><input type="radio" name="q2" data-correct="false"> Libera gás carbônico</label><br>
+                    <label><input type="radio" name="q2" data-correct="true"> Ocorre no citoplasma</label><br>
+                    <label><input type="radio" name="q2" data-correct="false"> Ocorre fosforilação a nível de substrato</label><br>
+                    <label><input type="radio" name="q2" data-correct="false"> A primeira reação é a condensação do acetil-coA com oxaloacetato formando citrato</label><br>
+                    <button type="button" onclick="prevPage()">Anterior</button>
+                    <button type="button" onclick="nextPage()">Próxima</button>
+                </fieldset>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div id="page3" style="display: none;">
+                <fieldset>
+                    <legend>3) Julgue a alternativa como verdadeira ou falsa: <br> “ Ocorre a produção da coenzima reduzida FADH2 apenas na 6ª reação, na formação do fumarato ”</legend>
+                    <label><input type="radio" name="q3" data-correct="true"> Verdadeiro</label><br>
+                    <label><input type="radio" name="q3" data-correct="false"> Falso</label><br>
+                    <button type="button" onclick="prevPage()">Anterior</button>
+                    <button type="button" onclick="nextPage()">Próxima</button>
+                </fieldset>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div id="page4" style="display: none;">
+                <fieldset>
+                    <legend>4) Qual a reação que antecede o ciclo de Krebs</legend>
+                    <label><input type="radio" name="q4" data-correct="false"> Glicólise</label><br>
+                    <label><input type="radio" name="q4" data-correct="false"> Neoglicogênese</label><br>
+                    <label><input type="radio" name="q4" data-correct="true"> Descarboxilação oxidativa do piruvato</label><br>
+                    <label><input type="radio" name="q4" data-correct="false"> Desidratação do citrato</label>
+                    <button type="button" onclick="prevPage()">Anterior</button>
+                    <button type="button" onclick="nextPage()">Próxima</button>
+                </fieldset>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div id="page5" style="display: none;">
+                <fieldset>
+                    <legend>5) Sobre o saldo de 1 glicose após o ciclo de Krebs:</legend>
+                    <label><input type="radio" name="q5" data-correct="false"> 1 ATP, 1 FADH2, 3 NADH + H+</label><br>
+                    <label><input type="radio" name="q5" data-correct="false"> 2 ATPs e 2 NADH + H+</label><br>
+                    <label><input type="radio" name="q5" data-correct="true"> 2 ATPs, 2 FADH2, 6 NADH + H+</label><br>
+                    <label><input type="radio" name="q5" data-correct="false"> 1 ATP, 2 FADH2, 3 NADH + H+</label>
+                    <button type="button" onclick="prevPage()">Anterior</button>
+                    <button type="button" onclick="nextPage()">Próxima</button>
+                </fieldset>
+            </div>
+
+            <!-- Pergunta 6 -->
+            <div id="page6" style="display: none;">
+                <fieldset>
+                    <legend>6) Verdadeiro ou falso?<br>
+                        “ O citrato modula negativamente a glicólise”
+                        </legend>
+                    <label><input type="radio" name="q6" data-correct="true"> Verdadeiro</label><br>
+                    <label><input type="radio" name="q6" data-correct="false"> Falso</label><br>
+                    <button type="button" onclick="prevPage()">Anterior</button>
+                    <button type="button" onclick="nextPage()">Próxima</button>
+                </fieldset>
+            </div>
+
+                        <!-- Pergunta 7 -->
+            <div id="page7" style="display: none;">
+                <fieldset>
+                    <legend>7) Onde ocorre o Ciclo de Krebs?</legend>
+                    <label><input type="radio" name="q7" data-correct="false"> No citoplasma</label><br>
+                    <label><input type="radio" name="q7" data-correct="false"> No núcleo da célula</label><br>
+                    <label><input type="radio" name="q7" data-correct="false"> No líquido intersticial </label><br>
+                    <label><input type="radio" name="q7" data-correct="true"> Na mitocôndria                    </label>
+                    <button type="button" onclick="prevPage()">Anterior</button>
+                    <button type="button" onclick="nextPage()">Próxima</button>
+                </fieldset>
+            </div>
+
+            <div id="page8" style="display: none;">
+                <fieldset>
+                    <legend>8) Onde ocorre o Ciclo de Krebs?</legend>
+                        <textarea type="text" name="q8" id="q8" data-correct="Formar coenzimas reduzidas que transportam os elétrons para a cadeia de elétrons de transporte, lá que será produzido a maior parte de ATP.
+                        "></textarea>
+                    <button type="button" onclick="prevPage()">Anterior</button>
+                    <button type="button" onclick="nextPage()">Próxima</button>
+                </fieldset>
+            </div>
+
+            <div id="page9" style="display: none;">
+                <fieldset>
+                    <legend>9) Qual a primeira enzima do ciclo de Krebs?</legend>
+                    <label><input type="radio" name="q9" data-correct="false"> Aconitase</label><br>
+                    <label><input type="radio" name="q9" data-correct="true"> Citrato sintase</label><br>
+                    <label><input type="radio" name="q9" data-correct="false"> Hexoquinase</label><br>
+                    <label><input type="radio" name="q9" data-correct="false"> Piruvato quinase                  </label>
+                    <button type="button" onclick="submitQuiz()">Concluir</button>
+                    <button type="button" onclick="prevPage()">Anterior</button>
+                </fieldset>
+            </div>   
+
+        </form>
+    </div>
+
+    <div id="result" style="display: none;"></div>
+</body>
+</html>

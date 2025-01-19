@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes - Digestão de Carboidratos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Questionário 9 - Metabolismo do Glicogenio</h1>
+
+    <div id="quizContainer">
+        <form id="quizForm">
+            <!-- Pergunta 1 -->
+            <div id="page1" style="display: none;">
+                <fieldset>
+                    <legend>1) Qual é a principal função do glicogênio hepático?</legend>
+                    <label><input type="radio" name="q1" value="a"> Servir como fonte de ATP para os músculos.</label><br>
+                    <label><input type="radio" name="q1" value="b"> Armazenar energia a longo prazo na forma de triglicerídeos.</label><br>
+                    <label><input type="radio" name="q1" value="c" data-correct="true"> EManter os níveis de glicose no sangue entre as refeições.</label><br>
+                    <label><input type="radio" name="q1" value="d"> Fornecer glicose diretamente ao cérebro.</label>
+                </fieldset>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div id="page2" style="display: none;">
+                <fieldset>
+                    <legend>2) O glicogênio muscular é utilizado principalmente para:</legend>
+                    <label><input type="radio" name="q2" value="a" > Manutenção da glicose no sangue.</label><br>
+                    <label><input type="radio" name="q2" value="b"data-correct="true" > Produção de ATP para uso próprio do músculo.</label><br>
+                    <label><input type="radio" name="q2" value="c"> Síntese de glicose para outros tecidos.</label><br>
+                    <label><input type="radio" name="q2" value="d"> Sustentar longos períodos de jejum.</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div id="page3" style="display: none;">
+                <fieldset>
+                    <legend>3) Qual enzima está ausente nos músculos, impossibilitando-os de liberar glicose diretamente na corrente sanguínea?</legend>
+                    <label><input type="radio" name="q3" value="a"> Glicogênio fosforilase</label><br>
+                    <label><input type="radio" name="q3" value="b" data-correct="true"> Glicose-6-fosfatase</label><br>
+                    <label><input type="radio" name="q3" value="c"> Fosfoglicerato mutase</label><br>
+                    <label><input type="radio" name="q3" value="d"> Glicogênio sintase</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div id="page4"style="display: none;">
+                <fieldset>
+                    <legend>4) Quais são os dois processos que regulam os níveis de glicogênio no organismo?</legend>
+                    <label><input type="radio" name="q4" value="a"> Glicólise e glicogênese</label><br>
+                    <label><input type="radio" name="q4" value="b"data-correct="true"> Glicogênese e glicogenólise</label><br>
+                    <label><input type="radio" name="q4" value="c"> Gliconeogênese e glicogênese</label><br>
+                    <label><input type="radio" name="q4" value="d" >Glicólise e glicogenólise</label><br>
+                 </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div id="page5" style="display: none;">
+                <fieldset>
+                    <legend>5) Durante um jejum prolongado, qual forma de armazenamento energético é mais eficiente para a sobrevivência?</legend>
+                    <label><input type="radio" name="q5" value="a"> Glicogênio hepático</label><br>
+                    <label><input type="radio" name="q5" value="b"> Glicogênio muscular</label><br>
+                    <label><input type="radio" name="q5" value="c" data-correct="true"> Triglicerídeos</label><br>
+                    <label><input type="radio" name="q5" value="d"> Proteínas</label><br>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 6 -->
+            <div id="page6" style="display: none;">
+                <fieldset>
+                    <legend>6) O que ocorre durante a glicogenólise?</legend>
+                    <label><input type="radio" name="q6" value="a"> Síntese de glicose a partir de precursores não glicídicos</label><br>
+                    <label><input type="radio" name="q6" value="b" data-correct="true"> Degradação do glicogênio para produção de glicose ou glicose-6-fosfato</label><br>
+                    <label><input type="radio" name="q6" value="c"> Armazenamento de glicose no fígado e nos músculos</label><br>
+                    <label><input type="radio" name="q6" value="d" > Oxidação de glicose para gerar energia</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 7 -->
+            <div id="page7" style="display: none;">
+                <fieldset>
+                    <legend>7) Qual é a ligação química predominante que permite a ramificação na estrutura do glicogênio?</legend>
+                    <label><input type="radio" name="q7" value="a"> Ligação glicosídica α-1,4</label><br>
+                    <label><input type="radio" name="q7" value="b" data-correct="true"> Ligação glicosídica α-1,6</label><br>
+                    <label><input type="radio" name="q7" value="c"> Ligação peptídica</label><br>
+                    <label><input type="radio" name="q7" value="d"> Ligação fosfodiéster</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 8 -->
+            <div id="page8" style="display: none;">
+                <fieldset>
+                    <legend>8) Qual é o papel do glucagon na regulação da glicogenólise?</legend>
+                    <label><input type="radio" name="q8" value="a"> Inibe a glicogenólise ao ativar a glicogênio sintase</label><br>
+                    <label><input type="radio" name="q8" value="b"data-correct="true"> Estimula a glicogenólise ao ativar a glicogênio fosforilase no fígado</label><br>
+                    <label><input type="radio" name="q8" value="c" > Reduz a glicogenólise ao aumentar os níveis de glicose no músculo</label><br>
+                    <label><input type="radio" name="q8" value="d"> Estimula a glicogenólise diretamente nos músculos para manter a glicemia</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="submitQuiz()">Concluir</button> 
+                </div>
+        </form>
+        <div id="result" style="display: none;"></div>
+        
+    </div>
+<script src="script2.js"defer></script>
+</body>
+</html>

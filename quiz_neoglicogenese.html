@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes - Digestão de Carboidratos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Questionário 8 - Neoglicogenese</h1>
+
+    <div id="quizContainer">
+        <form id="quizForm">
+            <!-- Pergunta 1 -->
+            <div id="page1" style="display: none;">
+                <fieldset>
+                    <legend>1) Assinale a alternativa incorreta:</legend>
+                    <label><input type="radio" name="q1" value="a"> A neoglicogênese ocorre quando estamos em jejum</label><br>
+                    <label><input type="radio" name="q1" value="b"> É a síntese de “novas moléculas de glicose” a partir de metabólitos não glicídicos</label><br>
+                    <label><input type="radio" name="q1" value="c" > Esse processo ocorre no fígado principalmente</label><br>
+                    <label><input type="radio" name="q1" value="d"data-correct="true"> Ácidos graxos e Acetil-coA podem ser precursores da glicose</label>
+                </fieldset>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div id="page2" style="display: none;">
+                <fieldset>
+                    <legend>2) São precursores da glicose Piruvato, Oxaloacetato, Lactato, Glicerol, Aminoácidos- aminoácidos glicogênicos (exceção lisina e leucina)</legend>
+                    <label><input type="radio" name="q2" value="a" data-correct="true"> Verdadeiro</label><br>
+                    <label><input type="radio" name="q2" value="b" > Falso</label><br>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div id="page3" style="display: none;">
+                <fieldset>
+                    <legend>3) Qual o principal órgão onde ocorre a gliconeogênese?</legend>
+                    <label><input type="radio" name="q3" value="a"> Músculo</label><br>
+                    <label><input type="radio" name="q3" value="b" data-correct="true"> Fígado</label><br>
+                    <label><input type="radio" name="q3" value="c"> Cérebro</label><br>
+                    <label><input type="radio" name="q3" value="d"> Tecido adiposo</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div id="page4"style="display: none;">
+                <fieldset>
+                    <legend>4) Quais são os principais precursores da gliconeogênese?</legend>
+                    <label><input type="radio" name="q4" value="a"> Aminoácidos glicogênicos, lactato, piruvato e ácidos graxos</label><br>
+                    <label><input type="radio" name="q4" value="b"data-correct="true"> Lactato, glicerol, piruvato e aminoácidos glicogênicos</label><br>
+                    <label><input type="radio" name="q4" value="c"> Glicerol, frutose, ácidos graxos e acetil-CoA</label><br>
+                    <label><input type="radio" name="q4" value="d" >Acetil-CoA, glicogênio, lactato e oxaloacetato</label><br>
+                 </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div id="page5" style="display: none;">
+                <fieldset>
+                    <legend>5) Por que os ácidos graxos não podem ser utilizados na gliconeogênese?</legend>
+                    <label><input type="radio" name="q5" value="a"> Eles não fornecem energia suficiente</label><br>
+                    <label><input type="radio" name="q5" value="b"> São usados apenas na glicogenólise</label><br>
+                    <label><input type="radio" name="q5" value="c" data-correct="true"> A maioria forma apenas acetil-CoA, que não fornece carbonos para a síntese de glicose</label><br>
+                    <label><input type="radio" name="q5" value="d"> Eles são armazenados diretamente como glicose</label><br>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 6 -->
+            <div id="page6" style="display: none;">
+                <fieldset>
+                    <legend>6) Qual enzima catalisa a conversão de piruvato em oxaloacetato?</legend>
+                    <label><input type="radio" name="q6" value="a">Glicose-6-fosfatase</label><br>
+                    <label><input type="radio" name="q6" value="b"> Lactato desidrogenase</label><br>
+                    <label><input type="radio" name="q6" value="c"> Fosfoenolpiruvato carboxiquinase</label><br>
+                    <label><input type="radio" name="q6" value="d" data-correct="true"> Piruvato carboxilase</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 7 -->
+            <div id="page7" style="display: none;">
+                <fieldset>
+                    <legend>7) Qual é a importância do ciclo de Cori durante o exercício físico?</legend>
+                    <label><input type="radio" name="q7" value="a"> Produzir ATP diretamente nos músculos</label><br>
+                    <label><input type="radio" name="q7" value="b" data-correct="true"> Converter lactato em glicose no fígado</label><br>
+                    <label><input type="radio" name="q7" value="c"> Degradar ácidos graxos para formar glicose</label><br>
+                    <label><input type="radio" name="q7" value="d"> Permitir a síntese de glicogênio nos músculos</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 8 -->
+            <div id="page8" style="display: none;">
+                <fieldset>
+                    <legend>8) Quando a gliconeogênese está ativada, o que ocorre com a glicólise?</legend>
+                    <label><input type="radio" name="q8" value="a"> É ativada simultaneamente</label><br>
+                    <label><input type="radio" name="q8" value="b"data-correct="true"> É inibida devido ao controle recíproco</label><br>
+                    <label><input type="radio" name="q8" value="c" > Continua no músculo mas para no fígado</label><br>
+                    <label><input type="radio" name="q8" value="d"> Depende do estado energético da célula</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="submitQuiz()">Concluir</button> 
+                </div>
+        </form>
+        <div id="result" style="display: none;"></div>
+        
+    </div>
+<script src="script2.js"defer></script>
+</body>
+</html>

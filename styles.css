@@ -28,7 +28,7 @@ form {
 }
 
 fieldset {
-    border: 2px solid #3498db;
+    border: 2px solid #db34cd;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 15px;
@@ -37,7 +37,7 @@ fieldset {
 legend {
     padding: 0 10px;
     font-weight: bold;
-    color: #2c3e50;
+    color: #5c1e54;
 }
 
 label {
@@ -51,7 +51,7 @@ input[type="radio"] {
 }
 
 button {
-    background-color: #3498db;
+    background-color: #db34cd;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -62,12 +62,29 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #f873ed;
 }
 
 button:disabled {
     background-color: #bdc3c7;
     cursor: not-allowed;
+}
+/* Campo de texto */
+textarea {
+	width: 100%;
+	padding: 14px;
+	border: 2px solid #e1e1e1;
+	border-radius: 8px;
+	margin-top: 10px;
+	resize: vertical;
+	transition: border-color 0.3s, box-shadow 0.3s;
+}
+textarea:focus {
+	border-color: #e76f51;
+	/* Laranja */
+	outline: none;
+	box-shadow: 0 0 6px rgba(231, 111, 81, 0.6);
+	/* Laranja suave */
 }
 
 /* Estilo do resultado */

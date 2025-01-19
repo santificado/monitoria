@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes - Digestão de Carboidratos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Questionário 8 - Via das Pentoses</h1>
+
+    <div id="quizContainer">
+        <form id="quizForm">
+            <!-- Pergunta 1 -->
+            <div id="page1" style="display: none;">
+                <fieldset>
+                    <legend>1) O que caracteriza os lipídeos?</legend>
+                    <label><input type="radio" name="q1" value="a"> Alta solubilidade em água</label><br>
+                    <label><input type="radio" name="q1" value="b" >Solubilidade em solventes polares</label><br>
+                    <label><input type="radio" name="q1" value="c"data-correct="true"> Alta solubilidade em solventes apolares</label><br>
+                    <label><input type="radio" name="q1" value="d"> Formação de polímeros básicos</label></fieldset>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div id="page2" style="display: none;">
+                <fieldset>
+                    <legend>2)  Qual é a principal função dos triacilgliceróis no organismo?</legend>
+                    <label><input type="radio" name="q2" value="a"> Produzir hormônios sexuais</label><br>
+                    <label><input type="radio" name="q2" value="b" >Atuar como isolante térmico</label><br>
+                    <label><input type="radio" name="q2" value="c" data-correct="true"> Armazenar energia</label><br>
+                    <label><input type="radio" name="q2" value="d"> Regular a fluidez da membrana</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div id="page3" style="display: none;">
+                <fieldset>
+                    <legend>3) Os ácidos graxos essenciais são:</legend>
+                    <label><input type="radio" name="q3" value="a"> Ácido palmítico e ácido esteárico</label><br>
+                    <label><input type="radio" name="q3" value="b"data-correct="true"> Ácido linoleico e ácido linolênico</label><br>
+                    <label><input type="radio" name="q3" value="c" >  Ácido butírico e ácido láurico</label><br>
+                    <label><input type="radio" name="q3" value="d">Ácido oleico e ácido aracdônico</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div id="page4"style="display: none;">
+                <fieldset>
+                    <legend>4) A lipoproteína responsável pelo transporte reverso de colesterol é:</legend>
+                    <label><input type="radio" name="q4" value="a"> LDL</label><br>
+                    <label><input type="radio" name="q4" value="b"> VLDL</label><br>
+                    <label><input type="radio" name="q4" value="c" data-correct="true"> HDL</label><br>
+                    <label><input type="radio" name="q4" value="d" > HDL</label><br>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div id="page5" style="display: none;">
+                <fieldset>
+                    <legend>5) As lipoproteínas são classificadas de acordo com sua densidade. Qual das alternativas está correta?</legend>
+                    <label><input type="radio" name="q5" value="a"> Quilomícrons são as mais densas</label><br>
+                    <label><input type="radio" name="q5" value="b"data-correct="true"> HDL possui a maior densidade</label><br>
+                    <label><input type="radio" name="q5" value="c" > LDL possui menor quantidade de colesterol</label><br>
+                    <label><input type="radio" name="q5" value="d" > VLDL possui a menor densidade</label><br>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 6 -->
+            <div id="page6" style="display: none;">
+                <fieldset>
+                    <legend>6) Qual é o principal precursor dos corpos cetônicos?</legend>
+                    <label><input type="radio" name="q6" value="a">Ácidos graxos livres</label><br>
+                    <label><input type="radio" name="q6" value="b"data-correct="true">Glicerol</label><br>
+                    <label><input type="radio" name="q6" value="c" > Acetil-CoA</label><br>
+                    <label><input type="radio" name="q6" value="d"> Carnitina</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 7 -->
+            <div id="page7" style="display: none;">
+                <fieldset>
+                    <legend>7) A oxidação dos ácidos graxos ocorre em qual local da célula?</legend>
+                    <label><input type="radio" name="q7" value="a"> Retículo endoplasmático</label><br>
+                    <label><input type="radio" name="q7" value="b" >  Citoplasma</label><br>
+                    <label><input type="radio" name="q7" value="c"data-correct="true"> Mitocôndria</label><br>
+                    <label><input type="radio" name="q7" value="d"> Núcleo</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+            </div>
+
+            <!-- Pergunta 8 -->
+            <div id="page8" style="display: none;">
+                <fieldset>
+                    <legend>8)O transporte de ácidos graxos de cadeia longa para a mitocôndria depende de:                    </legend>
+                    <label><input type="radio" name="q8" value="a"> Insulina</label><br>
+                    <label><input type="radio" name="q8" value="b" data-correct="true"> Carnitina</label><br>
+                    <label><input type="radio" name="q8" value="c" >  ATP sintase</label><br>
+                    <label><input type="radio" name="q8" value="d"> Lipase</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+                </div>
+
+                            <!-- Pergunta 9 -->
+            <div id="page9" style="display: none;">
+                <fieldset>
+                    <legend>9) As lipases pancreáticas têm como principal função:</legend>
+                    <label><input type="radio" name="q7" value="a"> Degradar proteínas em aminoácidos</label><br>
+                    <label><input type="radio" name="q7" value="b" >  Oxidar ácidos graxos</label><br>
+                    <label><input type="radio" name="q7" value="c"data-correct="true"> Hidrolisar triacilgliceróis em ácidos graxos livres e glicerol</label><br>
+                    <label><input type="radio" name="q7" value="d"> Promover a esterificação do colesterol</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+                </div>
+
+                        <!-- Pergunta 10 -->
+            <div id="page10" style="display: none;">
+                <fieldset>
+                    <legend>10) Os ácidos graxos saturados diferem dos insaturados por</legend>
+                    <label><input type="radio" name="q8" value="a"> Possuírem ligações duplas</label><br>
+                    <label><input type="radio" name="q8" value="b" > Não conterem hidrogênio</label><br>
+                    <label><input type="radio" name="q8" value="c" data-correct="true">  Serem sólidos à temperatura ambiente</label><br>
+                    <label><input type="radio" name="q8" value="d"> Serem encontrados apenas em vegetais</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+                </div>
+
+                            <!-- Pergunta 11 -->
+            <div id="page11" style="display: none;">
+                <fieldset>
+                    <legend>11) O colesterol é precursor de todas as moléculas abaixo, EXCETO:</legend>
+                    <label><input type="radio" name="q8" value="a"> Hormônios sexuais</label><br>
+                    <label><input type="radio" name="q8" value="b" > Ácidos biliares</label><br>
+                    <label><input type="radio" name="q8" value="c"data-correct="true" > Glicerol</label><br>
+                    <label><input type="radio" name="q8" value="d"> Vitamina D </label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+                </div>
+
+                            <!-- Pergunta 12 -->
+            <div id="page12" style="display: none;">
+                <fieldset>
+                    <legend>12) A enzima responsável pela síntese de colesterol é:</legend>
+                    <label><input type="radio" name="q8" value="a"data-correct="true"> HMG-CoA redutase</label><br>
+                    <label><input type="radio" name="q8" value="b" > Carnitina-palmitoiltransferase</label><br>
+                    <label><input type="radio" name="q8" value="c" >  Acil-CoA sintetase</label><br>
+                    <label><input type="radio" name="q8" value="d"> Lipase</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+                </div>
+                            
+                <!-- Pergunta 13 -->
+            <div id="page13" style="display: none;">
+                <fieldset>
+                    <legend>13) O que caracteriza a cetose?  </legend>
+                    <label><input type="radio" name="q8" value="a"> Baixa concentração de corpos cetônicos no plasma</label><br>
+                    <label><input type="radio" name="q8" value="b" > Produção insuficiente de acetona</label><br>
+                    <label><input type="radio" name="q8" value="c" data-correct="true">  Aumento de corpos cetônicos no plasma e urina</label><br>
+                    <label><input type="radio" name="q8" value="d"> Elevação do pH sanguíneo</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+                </div>
+
+                            <!-- Pergunta 14 -->
+            <div id="page14" style="display: none;">
+                <fieldset>
+                    <legend>14) O HDL é conhecido como colesterol bom porque:                    </legend>
+                    <label><input type="radio" name="q8" value="a"> Transporta colesterol para os tecidos periféricos </label><br>
+                    <label><input type="radio" name="q8" value="b" > Auxilia na formação de ateromas                    </label><br>
+                    <label><input type="radio" name="q8" value="c" data-correct="true"> Remove colesterol dos tecidos para o fígado                    </label><br>
+                    <label><input type="radio" name="q8" value="d"> Reduz a oxidação dos ácidos graxos                    </label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+                </div>
+
+                            <!-- Pergunta 15 -->
+            <div id="page15" style="display: none;">
+                <fieldset>
+                    <legend>15) O excesso de LDL no sangue pode levar a:
+                    </legend>
+                    <label><input type="radio" name="q8" value="a"> Prevenção de dislipidemias                    </label><br>
+                    <label><input type="radio" name="q8" value="b" data-correct="true"> Aterosclerose e doenças cardiovasculares                    </label><br>
+                    <label><input type="radio" name="q8" value="c" >  Diminuição do risco de diabetes                    </label><br>
+                    <label><input type="radio" name="q8" value="d"> Aumento de HDL</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+                </div>
+
+                            <!-- Pergunta 16 -->
+            <div id="page16" style="display: none;">
+                <fieldset>
+                    <legend>>16) A hiperquilomicronemia está relacionada a:</legend>
+                    <label><input type="radio" name="q8" value="a" data-correct="true"> Deficiência de lipase lipoprotéica                    </label><br>
+                    <label><input type="radio" name="q8" value="b" > Elevação do HDL                    </label><br>
+                    <label><input type="radio" name="q8" value="c" >  Alta produção de corpos cetônicos                    </label><br>
+                    <label><input type="radio" name="q8" value="d"> Diminuição de LDL                    </label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+                </div>
+
+                            <!-- Pergunta 17 -->
+            <div id="page17" style="display: none;">
+                <fieldset>
+                    <legend>17) Durante o jejum prolongado, o oxalacetato é direcionado para:
+                    </legend>
+                    <label><input type="radio" name="q8" value="a"> Ciclo de Krebs                    </label><br>
+                    <label><input type="radio" name="q8" value="b" data-correct="true"> Gliconeogênese</label><br>
+                    <label><input type="radio" name="q8" value="c" >  Beta-oxidação                    </label><br>
+                    <label><input type="radio" name="q8" value="d"> Formação de lipoproteínas                    </label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+                </div>
+
+                            <!-- Pergunta 18 -->
+            <div id="page18" style="display: none;">
+                <fieldset>
+                    <legend>18) O principal local de armazenamento de triacilgliceróis no organismo é:                    </legend>
+                    <label><input type="radio" name="q8" value="a"> Miócitos</label><br>
+                    <label><input type="radio" name="q8" value="b" > Hepatócitos</label><br>
+                    <label><input type="radio" name="q8" value="c" data-correct="true">  Adipócitos</label><br>
+                    <label><input type="radio" name="q8" value="d"> Enterócitos</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
+                </div>
+
+                            <!-- Pergunta 19 -->
+            <div id="page19" style="display: none;">
+                <fieldset>
+                    <legend>19) Os fatores de risco modificáveis para doenças cardiovasculares incluem:                    </legend>
+                    <label><input type="radio" name="q8" value="a"> Idade e sexo</label><br>
+                    <label><input type="radio" name="q8" value="b" data-correct="true"> Alimentação e tabagismo</label><br>
+                    <label><input type="radio" name="q8" value="c" >  Genética e menopausa</label><br>
+                    <label><input type="radio" name="q8" value="d"> Estresse e fatores genéticos</label>
+                </fieldset>
+                <button type="button" onclick="prevPage()">Anterior</button>
+                <button type="button" onclick="submitQuiz()">Concluir</button> 
+                </div>
+        </form>
+        <div id="result" style="display: none;"></div>
+        
+    </div>
+<script src="script5.js"defer></script>
+</body>
+</html>

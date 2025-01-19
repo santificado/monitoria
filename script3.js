@@ -1,6 +1,6 @@
 // Variáveis globais
 let currentPage = 1;
-const totalPages = 8; // Atualizado conforme o número correto de páginas
+const totalPages = 9; // Atualizado conforme o número correto de páginas
 
 function showPage(pageNumber) {
     // Oculta todas as páginas e exibe apenas a página atual
