@@ -6,8 +6,15 @@
     <title>Quiz - Bioenergética</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script1.js"></script>   <!-- Ajustado o nome do arquivo JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
+
 <body>
+<div class="back-button">
+    <a href="index.html" class="btn-back"><i class="fas fa-home"></i></a>
+</div>
+
     <h1>Questionário 1 - Bioenergética</h1>
 
     <div id="quizContainer">
@@ -82,10 +89,10 @@
             <div id="page6" style="display: none;">
                 <fieldset>
                     <legend>6) Sobre as coenzimas NAD+ e FAD, é incorreto:</legend>
-                    <label><input type="radio" name="q6"   value="a"> FAD recebe dois elétrons e um próton.</label><br>
+                    <label><input type="radio" name="q6"  data-correct="true" value="a"> FAD recebe dois elétrons e um próton.</label><br>
                     <label><input type="radio" name="q6"   value="b"> FAD reduz-se a FADH2 e NAD+ reduz em NADH + H+.</label><br>
                     <label><input type="radio" name="q6" value="c"> NAD+ faz a transferência de 2 elétrons e um próton.</label><br>
-                    <label><input type="radio" name="q6" data-correct="true" value="d"> São coenzimas que recebem H+ e elétrons na oxidação da glicose.</label>
+                    <label><input type="radio" name="q6"  value="d"> São coenzimas que recebem H+ e elétrons na oxidação da glicose.</label>
                     <button type="button" onclick="prevPage()">Anterior</button>
                     <button type="button" onclick="submitQuiz()">Concluir</button> 
                 </fieldset>

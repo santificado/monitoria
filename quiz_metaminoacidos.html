@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Interativo</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script1.js"></script>
+    <script defer src="script4.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
+
 <body>
+<div class="back-button">
+    <a href="index.html" class="btn-back"><i class="fas fa-home"></i></a>
+</div>
+
     <div id="quizContainer">
         <form id="quizForm">
             <!-- Página 1 -->
@@ -16,8 +23,8 @@
                 <fieldset>
                     <legend>1)Qual é a principal função das proteínas transportadoras na borda em escova do intestino?</legend>
                     <label><input type="radio" name="question1" value="mitocôndria" data-correct="false"> Produzir pepsina</label><br>
-                    <label><input type="radio" name="question1" value="citossol" data-correct="true"> Degradar proteínas em peptídeos</label><br>
-                    <label><input type="radio" name="question1" value="membrana plasmática" data-correct="false"> Transportar aminoácidos e peptídeos</label><br>
+                    <label><input type="radio" name="question1" value="citossol" data-correct="false"> Degradar proteínas em peptídeos</label><br>
+                    <label><input type="radio" name="question1" value="membrana plasmática" data-correct="true"> Transportar aminoácidos e peptídeos</label><br>
                     <label><input type="radio" name="question1" value="núcleo celular" data-correct="false"> Núcleo celular</label>
                 </fieldset>                
                 <button type="button" onclick="nextPage()">Próxima</button>
@@ -27,10 +34,10 @@
                 <h2>Perguntas - Página 2</h2>
 
                 <fieldset>
-                    <legend>2. Está incorreto sobre glicólise:</legend>
-                    <label><input type="radio" name="question2" value="Glicólise é a oxidação de glicose a piruvato" data-correct="false"> Glicólise é a oxidação de glicose a piruvato</label><br>
-                    <label><input type="radio" name="question2" value="É um processo que ocorre em três etapas em condições aeróbicas" data-correct="false"> É um processo que ocorre em três etapas em condições aeróbicas</label><br>
-                    <label><input type="radio" name="question2" value="Tem o rendimento de 2 piruvatos, 1 ATP, 2 NADH + H+" data-correct="true"> Tem o rendimento de 2 piruvatos, 1 ATP, 2 NADH + H+</label><br>
+                    <legend>2.  Qual enzima é responsável por ativar o tripsinogênio no intestino?</legend>
+                    <label><input type="radio" name="question2" value="Gastrina" data-correct="false"> Gastrina</label><br>
+                    <label><input type="radio" name="question2" value="Enteropeptidase " data-correct="true"> Enteropeptidase        </label><br>
+                    <label><input type="radio" name="question2" value="Secretina" data-correct="false"> Secretina</label><br>
                     <label><input type="radio" name="question2" value="São consumidos 2 ATPs inicialmente, e são gerados 4 ATPs" data-correct="false"> São consumidos 2 ATPs inicialmente, e são gerados 4 ATPs</label>
                 </fieldset>
                 
@@ -42,11 +49,11 @@
             <div id="page3" class="quiz-page" style="display: none;">
                 <h2>Perguntas - Página 3</h2>
                 <fieldset>
-                    <legend>3. Qual o saldo de ATPs ao final da glicólise?</legend>
-                    <label><input type="radio" name="question3" value="4" data-correct="false"> 4</label><br>
-                    <label><input type="radio" name="question3" value="2" data-correct="true"> 2</label><br>
-                    <label><input type="radio" name="question3" value="6" data-correct="false"> 6</label><br>
-                    <label><input type="radio" name="question3" value="0" data-correct="false"> 0</label>
+                    <legend>3.  Em qual parte do sistema digestório ocorre a maior parte da digestão de proteínas?</legend>
+                    <label><input type="radio" name="question3" value="Estômago" data-correct="false"> Estômago</label><br>
+                    <label><input type="radio" name="question3" value="Esôfago" data-correct="false"> Esôfago</label><br>
+                    <label><input type="radio" name="question3" value="Intestino delgado" data-correct="true"> Intestino delgado</label><br>
+                    <label><input type="radio" name="question3" value="Intestino grosso" data-correct="false"> Intestino grosso</label>
 
                 </fieldset>                    
                     <button type="button" onclick="prevPage()">Anterior</button>
@@ -57,11 +64,11 @@
                 <h2>Perguntas - Página 4</h2>
 
                 <fieldset>
-                    <legend>4. Qual é a enzima responsável pela conversão de glicose em glicose-6-fosfato no início da glicólise?</legend>
-                    <label><input type="radio" name="question4" value="Hexoquinase" data-correct="true"> Hexoquinase</label><br>
-                    <label><input type="radio" name="question4" value="Piruvato quinase" data-correct="false"> Piruvato quinase</label><br>
-                    <label><input type="radio" name="question4" value="Fosfofrutoquinase-1" data-correct="false"> Fosfofrutoquinase-1</label><br>
-                    <label><input type="radio" name="question4" value="Aldolase" data-correct="false"> Aldolase</label>
+                    <legend>4. Qual aminoácido é o único que sofre desaminação oxidativa direta no corpo?</legend>
+                    <label><input type="radio" name="question4" value="Alanina" data-correct="false"> Alanina</label><br>
+                    <label><input type="radio" name="question4" value="Glutamato" data-correct="true"> Glutamato</label><br>
+                    <label><input type="radio" name="question4" value="Aspartato" data-correct="false"> Aspartato</label><br>
+                    <label><input type="radio" name="question4" value="Leucina" data-correct="false"> Leucina</label>
                 </fieldset>
                 
                 <button type="button" onclick="prevPage()">Anterior</button>
@@ -72,11 +79,11 @@
             <div id="page5" class="quiz-page" style="display: none;">
                 <h2>Perguntas - Página 5</h2>
                 <fieldset>
-                    <legend>5. Qual dos seguintes não é um produto direto da glicólise?</legend>
-                    <label><input type="radio" name="question5" value="NADH" data-correct="false"> NADH</label><br>
-                    <label><input type="radio" name="question5" value="ATP" data-correct="false"> ATP</label><br>
-                    <label><input type="radio" name="question5" value="CO₂" data-correct="true"> CO₂</label><br>
-                    <label><input type="radio" name="question5" value="Piruvato" data-correct="false"> Piruvato</label>
+                    <legend>5. Qual das alternativas a seguir é uma função do ciclo da ureia no fígado?</legend>
+                    <label><input type="radio" name="question5" value="Síntese de neurotransmissores" data-correct="false"> Síntese de neurotransmissores</label><br>
+                    <label><input type="radio" name="question5" value="Eliminação do nitrogênio na forma de ureia" data-correct="true"> Eliminação do nitrogênio na forma de ureia</label><br>
+                    <label><input type="radio" name="question5" value="Produção de glicose a partir de aminoácidos" data-correct="false"> Produção de glicose a partir de aminoácidos</label><br>
+                    <label><input type="radio" name="question5" value="Transporte de lipídios no sangue" data-correct="false"> Transporte de lipídios no sangue</label>
                 </fieldset>
                 <button type="button" onclick="prevPage()">Anterior</button>
                 <button type="button" onclick="nextPage()">Próxima</button>
@@ -84,17 +91,35 @@
 
             <!-- Página 6 -->
             <div id="page6" class="quiz-page" style="display: none;">
-                <h2>Perguntas - Página 7</h2>
+                <h2>Perguntas - Página 6</h2>
                 <fieldset>
-                    <legend>6. Sobre a conversão de piruvato a acetil-CoA marque a alternativa incorreta:</legend>
-                    <label><input type="radio" name="question6" value="ocorre em condições de aerobiose" data-correct="false"> ocorre em condições de aerobiose</label><br>
-                    <label><input type="radio" name="question6" value="é um processo reversível" data-correct="true"> é um processo reversível</label><br>
-                    <label><input type="radio" name="question6" value="O complexo piruvato desidrogenase envolve 3 enzimas" data-correct="false"> O complexo piruvato desidrogenase envolve 3 enzimas</label>
+                    <legend>6. Durante o jejum prolongado, os aminoácidos são utilizados principalmente para:</legend>
+                    <label><input type="radio" name="question6" value="Produzir corpos cetônicos" data-correct="false"> Produzir corpos cetônicos</label><br>
+                    <label><input type="radio" name="question6" value="Fornecer energia através da oxidação" data-correct="true">Fornecer energia através da oxidação</label><br>
+                    <label><input type="radio" name="question6" value="Aumentar a síntese proteica" data-correct="false">Aumentar a síntese proteica</label><br>
+                    <label><input type="radio" name="question6" value="Transportar glicose para o músculo" data-correct="false">Transportar glicose para o músculo</label>
                 </fieldset>
                 
                 <button type="button" onclick="prevPage()">Anterior</button>
-                <button type="button" onclick="submitQuiz()">Concluir</button>
+                <button type="button" onclick="nextPage()">Próxima</button>
             </div>
+
+                    <!-- Página 7 -->
+                    <div id="page7" class="quiz-page" style="display: none;">
+                        <h2>Perguntas - Página 7</h2>
+                        <fieldset>
+                            <legend>7. Qual é o índice que combina valor biológico e digestibilidade das proteínas?</legend>
+                            <label><input type="radio" name="question7" value="Digestibilidade Bruta (DB)" data-correct="false"> Digestibilidade Bruta (DB)</label><br>
+                            <label><input type="radio" name="question7" value="Valor Biológico (BV)" data-correct="false">Valor Biológico (BV)</label><br>
+                            <label><input type="radio" name="question7" value="Utilização Líquida de Proteína (NPU)" data-correct="true">Utilização Líquida de Proteína (NPU)</label><br>
+
+                            <label><input type="radio" name="question7" value="Taxa de Absorção Protéica (TAP)  " data-correct="false">Taxa de Absorção Protéica (TAP)
+                            </label>
+                        </fieldset>
+                        
+                        <button type="button" onclick="prevPage()">Anterior</button>
+                        <button type="button" onclick="submitQuiz()">Concluir</button>
+                    </div>
         </form>
     </div>
 

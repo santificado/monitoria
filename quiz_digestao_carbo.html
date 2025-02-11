@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizzes - Digestão de Carboidratos</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
+
 <body>
+<div class="back-button">
+    <a href="index.html" class="btn-back"><i class="fas fa-home"></i></a>
+</div>
+
     <h1>Questionário 2 - Digestão de Carboidratos</h1>
 
     <div id="quizContainer">
@@ -115,10 +122,42 @@
                 <button type="button" onclick="prevPage()">Anterior</button>
                 <button type="button" onclick="submitQuiz()">Concluir</button> 
                 </div>
+
+             <div id="page9" style="display: none;">
+                <fieldset>
+                    <legend>9)  Sobre a entrada de glicose na célula, está incorreto o que se afirma em:</legend>
+                    <label><input type="radio" name="q9" value="a"> Glicose entra na célula por proteínas transportadoras conhecidas como Gluts.</label><br>
+                    <label><input type="radio" name="q9" value="b"> Glut 1 está nos eritrócitos, Glut 2 está no fígado, Glut 3 está no cérebro e Glut 4 está nos músculos esqueléticos, cardíaco tecido adiposo e glândulas mamárias.</label><br>
+                    <label><input type="radio" name="q9" value="c" data-correct="true"> Os tecidos que possuem como transportador de glicose o Glut 4 são insulino independentes </label><br>
+                    <label><input type="radio" name="q9" value="d"> A insulina se liga aos receptores de insulina das células que desencadeiam uma cascata de reações e levam o Glut 4 que estava em vesículas dentro da célula para a membrana celular, permitindo a entrada de glicose dentro dessas células. </label>
+                </fieldset>
+             </div>
+
+             <div id="page10" class="page">
+                <div class="question" data-type="essay">
+                    <p>10) Qual a importância da insulina?</p>
+                    <textarea id="q10" name="q10" ></textarea>
+                    <input type="hidden" data-correct-answer=" insulina é crucial para regular os níveis de glicose no sangue, facilitando a entrada de glicose nas células dos tecidos insulino dependentes para ser usada como energia ou armazenada como glicogênio, além de inibir a quebra de gorduras e proteínas, promovendo o equilíbrio metabólico.">
+                </div>
+                <button type="button" onclick="nextPage()">Próxima</button>
+                <button type="button" onclick="prevPage()">Anterior</button>
+            </div>
+            
+            <div id="page11" style="display: none;">
+                <fieldset>
+                    <legend>11) Quem tem intolerância a lactose</legend>
+                    <label><input type="radio" name="q9" value="a"> Tem deficiência ou ausência da enzima lactase</label><br>
+                    <label><input type="radio" name="q9" value="b"> Não produz lactose</label><br>
+                    <label><input type="radio" name="q9" value="c" data-correct="true"> Não metaboliza glicose </label><br>
+                    <label><input type="radio" name="q9" value="d"> Tem a capacidade de digerir a lactose </label>
+                </fieldset>
+             </div>
+
+
         </form>
         <div id="result" style="display: none;"></div>
         
     </div>
-<script src="script2.js"defer></script>
+<script src="script6.js"defer></script>
 </body>
 </html>
