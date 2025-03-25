@@ -16,6 +16,7 @@ h1, h2 {
     margin-bottom: 15px;
 }
 
+/* Formulário */
 form {
     max-width: 800px;
     margin: 30px auto;
@@ -61,6 +62,7 @@ input[type="radio"] {
     transform: scale(1.2);
 }
 
+/* Botões */
 button {
     background: linear-gradient(135deg, #db34cd, #f873ed);
     color: white;
@@ -136,34 +138,35 @@ textarea:focus {
     text-decoration: underline;
 }
 
+/* Botão de voltar */
 .back-button {
-	position: fixed;
-	top: 15px;
-	left: 15px;
-	z-index: 10;
-	/* Garantir que o botão esteja acima de outros elementos */
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
 }
+
 .btn-back {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	text-decoration: none;
-	background-color: #e76f51;
-	/* Laranja */
-	color: #fff;
-	padding: 14px 20px;
-	font-size: 1.2rem;
-	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	transition: background-color 0.3s, transform 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #e76f51;
+    color: #fff;
+    padding: 14px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
 }
+
 .btn-back:hover {
-	background-color: #f4a261;
-	/* Laranja mais claro */
-	transform: translateY(-4px);
+    background-color: #f4a261;
+    transform: translateY(-4px);
 }
+
 .btn-back:focus {
-	outline: none;
+    outline: none;
 }
 
 /* Estilo responsivo */
